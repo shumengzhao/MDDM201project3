@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.useso.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+</head>
+<body>
+	<!----start-header---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo-3.png" alt=""></a>
+			</div>
+			<div class="navigation">
+			 <span class="menu"></span> 
+				<ul class="navig">
+					<li><a class="active" href="index.html">Home</a><span> </span></li>
+					<li><a href="explore.html">Explore</a><span> </span></li>
+					<li><a href="journal.html">Journal</a><span> </span></li>
+					<li><a href="plan.html">Plan</a><span> </span></li>
+					
+					<li><a href="contact.html">Contact</a><span> </span></li>
+				</ul>
+			</div>
+				 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		</div>
+	</div>	
+	<!----end-header---->
+	<!--banner-starts-->
+	<div class="banner" id="home">
+		<div class="container">
+			<section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+						<li>
+							<div class="banner-top">
+							<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/wellington.JPG" alt="" />
+								<h3>Wellington</h3>
+								<a href="single.html">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/beijing.JPG" alt="" />
+								<h3>Beijing</h3>
+								<a href="single.html">Read More</a>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top">
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/tekapo.JPG" alt="" />
+								<h3>Lake Tekapo</h3>
+								<a href="single.html">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/dunedin.JPG" alt="" />
+								<h3>Dunedin</h3>
+								<a href="single.html">Read More</a>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top">
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/fox.JPG" alt="" />
+								<h3>Fox Glacier</h3>
+								<a href="single.html">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/queenstown.JPG" alt="" />
+								<h3>Queenstown</h3>
+								<a href="single.html">Read More</a>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</li>
+          </ul>
+        </div>
+      </section>
+		</div>
+	</div>
+	<!--banner-ends--> 
+	<!--FlexSlider-->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</div>
+			<!--End-slider-script-->
+	<!--explore-starts--> 
+	<div class="explore">
+		<div class="container">
+			<div class="explore-top">
+				<h1>WELCOME TO OUR EXPLORATION</h1>
+				<p> If you still have no idea where to go, the exploration area would be great for you to find destination for your own trip. This area includes thousands of sight spots posted by real users from this website.  </p>
+			</div>
+			<div class="explore-bottom">
+				<div class="col-md-6 explore-left">
+					<h3>CATEGORY EXPLORATION</h3>
+					<p>Or you have already decided a specific kind of sight, such as beach. The category exploration could help you find all beaches around the world. It is easy for you to compare the position, budget and scenery with each other and decide.</p>
+					<div class="explore-one">
+						<div class="col-md-6 explore-one-left">
+							<a href="single.html"><img src="images/w-6.jpg" alt="" /></a>
+						</div>
+						<div class="col-md-6 explore-one-right">
+							<a href="single.html"><img src="images/w-4.jpg" alt="" /></a>
+							<a href="single.html" class="one-top"><img src="images/w-5.JPG" alt="" /></a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-6 explore-left">
+					<h3>CITY EXPLORATION</h3>
+					<p>After you decided the city you would like to go, you can start with the city exploration. There will be some detailed introduction for each city and all sight spots in this city. So you can add some sight spot to enrich your whole travel route.  </p>
+					<div class="explore-one">
+						<a href="single.html"><img src="images/w-2.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--welcome-ends--> 
+	<!--journal-starts-->
+	<div class="journal">
+		<div class="container">
+			<div class="journal-top heading">
+				<h2>OUR TOP JOURNALS</h2>
+			</div>
+			<div class="journal-bottom">
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/food.jpg" alt="" />
+					</a>
+					<h4><a href="single.html">Fantastic food in Japan</a></h4>
+					<p>Last summer I traveled to japan with my whole family. It is a good place for family travel. And the food in japan is so fantastic. Each of city has their own food to taste. So good. </p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/shopping.jpg" alt="" />
+					</a>
+					<h4><a href="single.html">Crazy shopping in America</a></h4>
+					<p>The best shopping place in the world is America. I have been to lots of outlets, but America ones are cheapest and biggest. You can find newest style in the cheapest price.</p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/travel.jpg" alt="" />
+					</a>
+					<h4><a href="single.html">Nayantara travels</a></h4>
+					<p>India is the most amazing place I have been before. Before I arrived, I have lots of imagination for India. But these all changed during my trips communicating with local people.</p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/o-1.jpg" alt="" />
+					></a>
+					<h4><a href="single.html">The old city in Singapore</a></h4>
+					<p>In my old impression, Singapore is a totally modern city. But when I traveled there last month, I found a historical area which is close to the modern city. </p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--journal-ends--> 
+	<!--about-starts--> 
+	<div class="about">
+		<div class="container">
+			<div class="about-top">
+				<h3>About us</h3>
+				<p>Gotogether is a website which helps us to build a community of collaborative travel style, from getting various information, create initial routes, communicate with others companions to travel together.</p>
+			</div>
+		</div>
+	</div>
+	<!--about-ends--> 
+	<!--connect-starts--> 
+	<div class="connect">
+		<div class="container">
+			<div class="connect-top">
+				<div class="col-md-4 connect-left">
+					<span class="home"></span>
+					<h4>Home</h4>
+					<p>When users firstly log on Gotogther, they could do lots more exploration to find traveling destinations at aspects of certain city or category. </p>
+				</div>
+				<div class="col-md-4 connect-left">
+					<span class="men"></span>
+					<h4>Create a account</h4>
+					<p> When users created a account in Gogother, they can give command to the journal, which is helpful to communicate with the other users and ask for more information you need. What is more, you can join the travel group and make some friend in this website. </p>
+				</div>
+				<div class="col-md-4 connect-left">
+					<span class="pen"></span>
+					<h4>Log in</h4>
+					<p>When you log in, watched journal will be remembered. It is better for you to keep your selection, when you change a computer. Because when you log in, the stuff will come back.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--connect-end--> 
+	<!--footer-starts--> 
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-4 footer-left">
+					<p>design in Victoria university MDDN 201<a target="_blank" href="index.html">GoTogether</a></p>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="google"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Address</h3>
+					<p>GoTogether, 
+					<span>139 Vivian Stree,Te Aro,Wellington,</span>
+					Sep 8th,2015.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--footer-ends--> 
+</body>
+</html>
