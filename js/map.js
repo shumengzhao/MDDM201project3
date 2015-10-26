@@ -13,7 +13,7 @@ var markersData = [
       subtitle2: "Tips",
       introduction: "Christchurch is a garden city on the east coast of New Zealand’s South Island, set on the Canterbury Plains. Flat-bottomed punts glide on the Avon River, which runs through the city centre. On its banks are cycling paths, the green expanse of Hagley Park and the Christchurch Botanic Gardens. In 2010 and 2011, 2 major earthquakes destroyed many city-centre buildings, and restoration work continues.",
       tips: " Departure Tax at the Airport,  at nite, Air pollution in winter" ,
-      images:"images/c.JPG" // don't insert comma in the last item of each marker
+      images:"images/c.JPG" 
    },
    {
       lat: -45.87,
@@ -23,7 +23,7 @@ var markersData = [
       subtitle2: "Tips",
       introduction: "Dunedin is a city in New Zealand, at the head of Otago Harbour on the South Island’s southeast coast. It's known for its Scottish and Maori heritage, Victorian and Edwardian architecture and a large student population. Hiking and cycling trails crisscross the dramatic landscape of the adjoining Otago Peninsula, home to colonies of albatrosses, sea lions and rare yellow-eyed penguins.",
       tips: "Taieri Gorge Railway, Train Station, Steepest Street",
-      images:"images/d.JPG" // don't insert comma in the last item of each marker
+      images:"images/d.JPG" 
    },
    {
       lat: -45.03,
@@ -33,7 +33,7 @@ var markersData = [
       subtitle2: "Tips",
       introduction: "Queenstown, New Zealand, sits on the shore of the South Island’s Lake Wakatipu, set against the dramatic Southern Alps. The surrounding Central Otago region is known for its Pinot Noir and Chardonnay vineyards, and for adventure sports. In winter, there's backcountry skiing and the country’s highest vertical drops. Summer brings paragliding, mountain biking and bungee-jumping (Kawarau Gorge Suspension Bridge is among the sport's original sites).",
       tips: "Skyline Gondola and Restaurant, Jet Boating, Bungy Jumping",
-      images:"images/queenstown.JPG" // don't insert comma in the last item of each marker
+      images:"images/queenstown.JPG" 
    }, 
    {
       lat: -43.46,
@@ -43,8 +43,8 @@ var markersData = [
       subtitle2: "Tips",
       introduction: "The Fox Glacier is a 13 km long glacier located in Westland Tai Poutini National Park on the West Coast of New Zealand's South Island. It was named in 1872 after a visit by the then Prime Minister of New Zealand, Sir William Fox",
       tips: "Fox Glacier by helicopter, Lake Matheson, Walk up to Fox Glacier" ,
-      images:"images/photo-2.jpg"// don't insert comma in the last item of each marker
-   } // don't insert comma in the last item
+      images:"images/photo-2.jpg"
+   } 
 ];
 
 
@@ -169,10 +169,7 @@ function initialize() {
     // Reference to the DIV that wraps the bottom of infowindow
     var iwOuter = $('.gm-style-iw');
 
-    /* Since this div is in a position prior to .gm-div style-iw.
-     * We use jQuery and create a iwBackground variable,
-     * and took advantage of the existing reference .gm-style-iw for the previous div with .prev().
-    */
+  
     var iwBackground = iwOuter.prev();
 
     // Removes background shadow DIV
